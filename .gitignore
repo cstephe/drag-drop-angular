@@ -1,0 +1,8 @@
+node_modules
+*.log
+.tmp
+.sass-cache
+bower_components
+.idea
+docs
+coverage

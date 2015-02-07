@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="example.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="exampleDD" ng-cloak>
+<div layout="column">
+    <div ng-controller="exampleCtrl">
+        List1
+        <div class="list-container" cs-droppable on-drop="onDrop" id="list1">
+            <div ng-repeat="item in list | filter:{list:'list1'}" id="{{item.id}}" cs-draggable>
+                {{item.name}}
+            </div>
+        </div>
+        <hr>
+        List2
+        <div class="list-container" cs-droppable on-drop="onDrop" id="list2">
+            <div ng-repeat="item in list | filter:{list:'list2'}" id="{{item.id}}" cs-draggable>
+                {{item.name}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbower -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="example.js"></script>
+<script src="src/dragDrop.js"></script>
+<!-- endbuild -->
+</body>
+</html>

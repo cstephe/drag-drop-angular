@@ -1,0 +1,15 @@
+.list-container{
+    padding: 5px;
+    border:black 2px solid;
+}
+.list-container.drag-over{
+    border-color: blue;
+}
+.list-container > div{
+    margin:5px;
+    border:black 2px solid;
+    padding:5px;
+}
+.list-container > div.dragging{
+    border-color: red;
+}
