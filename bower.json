@@ -4,6 +4,9 @@
   "dependencies": {
     "angular": "^1.3.x"
   },
+  "main": [
+    "src/dragDrop.js"
+  ],
   "devDependencies": {
     "angular-mocks": "^1.3.x",
     "underscore": "~1.7.0"
